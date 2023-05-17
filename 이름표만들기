@@ -1,0 +1,12 @@
+import cv2
+
+img = cv2.imread('../img/blank_500.jpg')
+
+cv2.rectangle(img, (50, 50), (450, 200), (255, 255, 0), 10)
+cv2.putText(img, "name", (60, 130), cv2.FONT_HERSHEY_DUPLEX, 1, (0,0,0))
+cv2.putText(img, "chang you chan", (180, 130), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0))
+cv2.line(img, (180, 70), (150, 180), (255, 0, 50), 2)
+
+cv2.imshow('lines', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
